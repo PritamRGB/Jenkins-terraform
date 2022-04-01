@@ -59,11 +59,7 @@ resource "aws_security_group" "terraform_sg" {
 
 #resource "aws_security_group" "ecn_sg" {}
 
-variable "amiid" {
 
-default = "ami-0069d66985b09d219"
-
-}
 
 data "aws_subnet" "my_subnet" {
   tags = {
