@@ -77,7 +77,7 @@ resource "aws_instance" "terraform_ec2" {
   subnet_id              = data.aws_subnet.my_subnet.id
   availability_zone = "eu-west-1b"
   key_name = "awsfortifydev01-windows"
-  user_data = "${file("mydata.sh")}"
+  #user_data = "${file("mydata.sh")}"
 #  security_groups  = ["ericsson-ecn-default-vpc-0e151f684cded6328"]
   security_groups = ["${aws_security_group.terraform_sg.id}"]
 
